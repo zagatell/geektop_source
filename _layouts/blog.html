@@ -1,0 +1,104 @@
+{% include /header-category.html %}
+{% include /top-line.html %}
+
+
+
+	<div class="cat-list">
+		<div class="container-fluid">
+			<div class="ad top-ad">
+				{% include /add-type-one.html %}
+			</div>
+
+			<div class="row">
+				<div class="col-md-8">
+					<div class="all-post-header">{{page.title}}</div>
+
+					<div class="cat-list-wrap">
+						{% for post in paginator.posts %}
+						{% include /category-list-item.html %}
+						{% endfor %}
+					</div>
+
+					<section class="paginatin-section text-center d-md-none">
+						<a href="#" class="button">Следующщая страница </a>
+			
+						<div class="pagination">
+							<span class="pagination-left">&laquo;</span>
+			
+							<span class="active">1</span>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#">5</a>
+							<a href="#" class="pagination-right">&raquo;</a>
+						</div>
+					</section>
+				</div>
+
+				<div class="col-md-4">
+					<aside class="main-aside">
+						<div class="aside-box">
+							{% include /add-type-3.html %}
+						</div>
+						
+						<div class="aside-box">
+							{% include /vk-widget.html %}
+						</div>
+
+						<div class="aside-box">
+							<div class="latest-box">
+								{% include /last-articles.html %}
+							</div>
+						</div>
+
+						<div class="aside-box">
+							Lates comments
+						</div>
+					</aside>	
+				</div>
+			</div>
+		</div>
+
+		{% include /pagination-1.html %}
+	</div>
+
+	<footer class="main-footer">
+		<div class="container">
+			<nav class="main-menu footer-menu">
+				<ul>
+					<li class="active"><a href="#">элекстроника</a></li>
+					<li><a href="#">новости it</a></li>
+					<li><a href="#">обзоры</a></li>
+					<li><a href="#">лайфхаки</a></li>
+					<li><a href="#">diy</a></li>
+					<li><a href="#">о сайте</a></li>
+				</ul>
+			</nav>
+
+			<nav class="soc">
+				<ul>
+					<li><a href="#"><span class="icon-vk"></span></a></li>
+					<li><a href="#"><span class="icon-facebook-f"></span></span></a></li>
+					<li><a href="#"><span class="icon-odnoklassniki"></span></a></li>
+					<li><a href="#"><span class="icon-inst"></span></a></li>
+					<li><a href="#"><span class="icon-rss1"></span></a></li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+
+	<footer class="bottom-footer">
+		<div class="container text-center">
+			<div class="footer-copy">
+				2021 &#169;
+				<span class="logo-litera logo-footer">Geektop</span>
+
+				<p>Копирование контента и размещение на других сайтах запрещено.</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

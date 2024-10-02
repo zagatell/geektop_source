@@ -1,0 +1,22 @@
+<header class="top-line">	
+    <a href="{{ site.baseurl }}" class="logo logo-litera">GEEKTOP</a>
+
+    <div class="search-wrap">
+        <div class="search" title="Поиск по сайту"><span class="icon-magnifying-glass-solid-1"></span></div>
+
+        <div class="search-field">
+            <form action="/search.html" id="cse-search-box">
+                <input type="hidden" name="cx" value="partner-pub-xxx:xxx" />
+                <input type="hidden" name="cof" value="FORID:10" />
+                <input type="hidden" name="ie" value="UTF-8" />
+                <input type="text" name="q" placeholder="Поиск по сайту..." />
+            </form>
+        </div>
+    </div>
+
+    <div class="mobile-menu-button"><span class="icon-bars-solid"></span> МЕНЮ</div>
+
+    <nav class="main-menu top-menu">
+       {% include /main-menu.html %}
+    </nav>
+</header>

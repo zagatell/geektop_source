@@ -1,0 +1,40 @@
+{% include /header-page.html %}
+{% include /top-line.html %}
+
+<div class="pattern pattern-cat-header">
+    <div class="cat-header header-about">
+        <div class="cat-header-blog">
+            <h1>о сайте geektop.ru</h1>
+        </div>
+    </div>
+</div>
+
+<div class="article-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <article class="main-article">
+                    <div class="article-body">
+
+                        <div id="cse-search-results"></div>
+                        <script type="text/javascript">
+                            var googleSearchIframeName = "cse-search-results";
+                            var googleSearchFormName = "cse-search-box";
+                            var googleSearchFrameWidth = 800;
+                            var googleSearchDomain = "www.google.ru";
+                            var googleSearchPath = "/cse";
+                        </script>
+                        <script type="text/javascript" src="https://www.google.com/afsonline/show_afs_search.js"></script>
+                        
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-4">
+                {% include /main-aside.html %}	
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include /footer.html %}

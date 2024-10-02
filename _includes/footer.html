@@ -1,0 +1,30 @@
+<footer class="main-footer">
+    <div class="container">
+        <nav class="main-menu footer-menu">
+            {% include /main-menu.html %}
+        </nav>
+
+        <nav class="soc">
+            <ul>
+                {{ site.soc }}
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+<footer class="bottom-footer">
+    <div class="container text-center">
+        <div class="footer-copy">
+            {{ site.time | date: '%Y' }} &#169;
+            <span class="logo-litera logo-footer">Geektop</span>
+
+            <p>{{site.copyright}}</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/scripts.min.js"></script>
+<script id="dsq-count-scr" src="//EXAMPLE.disqus.com/count.js" async></script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<div class="col-md-6">
+    <div class="pattern">
+        <div class="overlay item-title" style="background-image: url({{ post.thumb }})">
+            <div class="item-title-content">
+
+                <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+
+                <div class="item-social">
+                    <div class="item-comments" title="Колличество коментариев">
+                        <span class="icon-comments"></span><a href="{{ post.url }}#disqus_thread" class="item-comments-count"></a>
+                    </div>
+
+                    <span class="icon-circle circle-meta" ></span>
+
+                    <span class="icon-share share-meta" title="Поделиться в соц сетях"></span>
+
+                    <div class="likely likely-castom" data-url="{{ site.url }}{{ post.url }}" data-media="{{ site.url }}/{{ post.image }}" data-title="новые смартфоны покорили поклонников мобильной индустрии">
+                        <div class="vkontakte" title="Поделиться в Вконтакте">Вконтакте</div>
+                        <div class="facebook" title="Поделиться в Твиттер">facebook</div>
+                        <div class="twitter" title="Поделиться Твиттер">Твиттер</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
